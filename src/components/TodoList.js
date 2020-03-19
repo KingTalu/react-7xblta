@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TodoItems from "./TodoItems";
 import "./TodoList.css";
-import firebase from './Firebase';
+import firebase from './Firebase.js';
 
 class TodoList extends Component {
   constructor(props) {
@@ -41,6 +41,9 @@ class TodoList extends Component {
     <div className="todoListMain">
       <div className="header">
         <form onSubmit={this.addItem}>
+          <input ref={(a) => this._inputElement = a}
+            placeholder="enter task">
+          </input>
           <input ref={(a) => this._inputElement = a}
             placeholder="enter task">
           </input>
