@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TodoList from "./components/App";
+import TodoList from "./components/TodoList";
  
 class Reminder extends Component {
   render() {
