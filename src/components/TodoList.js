@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import TodoItems from "./TodoItems";
+import TodoItems from "./TodoItems.js";
 import "./TodoList.css";
+import firebase from "./firebase.js"
 
 class TodoList extends Component {
   constructor(props) {
