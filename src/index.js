@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Main from "./Main";
+import Main from "./Menu/MenuContainer";
 import "./index.css";
  
 ReactDOM.render(
