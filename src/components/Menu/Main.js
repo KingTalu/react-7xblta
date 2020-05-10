@@ -4,7 +4,7 @@ import MenuButton from "./MenuButton";
 import Home from "/src/Home.js";
 import Reminder from "./src/Reminder.js";
 import Documentation from "./src/Documentation.js";
-import Menu from "./Menu";
+import Menu from "./Menu.js";
 
 class MenuContainer extends Component {
   constructor(props, context) {
