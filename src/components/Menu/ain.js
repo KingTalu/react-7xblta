@@ -52,4 +52,4 @@ class MenuContainer extends Component {
   }
 }
 
-export default Main;
+export default ain;
