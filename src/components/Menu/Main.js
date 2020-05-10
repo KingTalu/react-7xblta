@@ -3,7 +3,7 @@ import { Route, NavLink, HashRouter } from "react-router-dom";
 import MenuButton from "./MenuButton";
 import Home from "/src/Home.js";
 import Reminder from "./src/Reminder.js";
-import Documentation from "./src/Documentation.js";
+import Documentation from "./src/documentation"
 import Menu from "./Menu.js";
 
 class MenuContainer extends Component {
