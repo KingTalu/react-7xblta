@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import MenuButton from "./MenuButton";
-import Home from "/src/Home";
-import Reminder from "/src/Reminder";
-import Documentation from "/src/documentation"
+import Home from "./Home";
+import Reminder from "./Reminder";
+import Documentation from "./Documentation"
 import Menu from "./Menu";
 
 class MenuContainer extends Component {
@@ -52,4 +52,4 @@ class MenuContainer extends Component {
   }
 }
 
-export default ain;
+export default MenuContainer;

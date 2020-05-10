@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ain from "./Menu/ain";
 import "./index.css";
+import MenuContainer from "./MenuContainer";
  
 ReactDOM.render(
-  <ain/>, 
-  document.getElementById("root")
+  <MenuContainer/>, 
+  document.querySelector("#container")
 );
