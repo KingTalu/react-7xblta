@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import MenuButton from "./MenuButton";
+import Home from "/src/Home.js";
+import Reminder from "./src/Reminder.js";
+import Documentation from "./src/Documentation.js";
 import Menu from "./Menu";
 
 class MenuContainer extends Component {
@@ -35,21 +39,17 @@ class MenuContainer extends Component {
         <MenuButton handleMouseDown={this.handleMouseDown}/>
         <Menu handleMouseDown={this.handleMouseDown}
               menuVisibility={this.state.visible}/>
-        <div>
-          <p>Can you spot the item that doesn&apos;t belong?</p>
-          <ul>
-              <li>Lorem</li>
-              <li>Ipsum</li>
-              <li>Dolor</li>
-              <li>Sit</li>
-              <li>Bumblebees</li>
-              <li>Aenean</li>
-              <li>Consectetur</li>
-          </ul>
-        </div>
-      </div>
+
+      <HashRouter>
+          <div className="content">
+            <Route exact path="/" component={Home} />
+            <Route path="/reminder" component={Reminder} />
+            <Route path="/documentation" component={Documentation} />
+          </div>
+      </HashRouter>
+       </div>
     );
   }
 }
 
-export default MenuContainer;
+export default Main;
