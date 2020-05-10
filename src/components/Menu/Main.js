@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import MenuButton from "./MenuButton";
 import Home from "/src/Home";
-import Reminder from "./src/Reminder";
-import Documentation from "./src/documentation"
+import Reminder from "/src/Reminder";
+import Documentation from "/src/documentation"
 import Menu from "./Menu";
 
 class MenuContainer extends Component {
