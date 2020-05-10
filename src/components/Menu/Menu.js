@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import "./Menu.css";
 
 class Menu extends Component {
@@ -10,14 +11,18 @@ class Menu extends Component {
     }
 
     return (
+      <HashRouter>
       <div id="flyoutMenu"
-           onMouseDown={this.props.handleMouseDown} 
            className={visibility}>
-        <h2><a href="#">Home</a></h2>
-        <h2><a href="#">About</a></h2>
-        <h2><a href="#">Contact</a></h2>
-        <h2><a href="#">Search</a></h2>
+            <button id="close"
+              onMouseDown={this.props.handleMouseDown}>close</button>
+          <ul className="header">
+            <li><NavLink exact to="/">Home</NavLink></li>
+            <li><NavLink to="/reminder">Reminder</NavLink></li>
+            <li><NavLink to="/documentation">Documentation</NavLink></li>
+          </ul>
       </div>
+      </HashRouter>
     );
   }
 }
